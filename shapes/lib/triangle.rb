@@ -1,9 +1,12 @@
 # frozen_string_literal: true
 
 def triangle(a, b, c)
-  sides = [a,b,c].sort
+  sides = [a,b,c].sort!
+  a = sides[0]
+  b = sides[1]
+  c = sides[2]
   case
-    when a < 0
+  when a <= 0
       raise TriangleError
 
     when a + b <= c
