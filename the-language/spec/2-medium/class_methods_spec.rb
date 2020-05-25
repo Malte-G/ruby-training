@@ -164,6 +164,6 @@ RSpec.describe 'Class methods' do
   it 'can define a better way to call class methods from instance methods' do
     percy = Cat6.new
 
-    expect(percy.call_class_method_from_instance_method).to eq(__)
+    expect(percy.call_class_method_from_instance_method).to eq(:still_another_way)
   end
 end
